@@ -1,0 +1,12 @@
+1. Repo de json server https://github.com/typicode/json-server.git
+2. ejecutar "git clone https://github.com/typicode/json-server.git"
+3. Saltar a la carpeta json-server
+4. Descargar dependencias "npm install"
+5. Instalar JSON-SERVER "npm install -g json-server" -- Aclarado en el repo del git 
+6. El repo del git aclara la creacion del archivo "db.json" con un template para copiar y pegar dentro
+7. Arrancar con "npx json-server db.json" el server
+8. Luego desde postman, mediante las rutas creadas en este server (los endpoints), podemos consultar y consumir para ver los resultados.
+    Ejemplo para consultar: "GET http://localhost:3000/posts" click en send. Nos devolvera el status 200 de ejecutado ok con la info
+    Ejemplo para ingresar datos: "POST http://localhost:3000/posts" Cargar el cuerpo del json de la misma manera que vemos en el GET y setear formato en postman (Click "body", "raw", "json") y click en send
+                                  Nos devolvera el status 201 de ingresada OK la info y se vera automaticamente en el server agregado la info ya sea visitiando la ruta desde la web o consultando en el GET o en el archivo "db.json"
+                                   
